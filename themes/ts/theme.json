@@ -7,9 +7,44 @@
             "custom": false,
             "palette": [
                 {
-                    "color": "#ff5252",
-                    "name": "gfr",
-                    "slug": "grapefruit"
+                    "color": "#D2E69C",
+                    "name": "LightYellow",
+                    "slug": "lightyellow"
+
+                },{
+                    "color": "#A03C78",
+                    "name": "Darkpink",
+                    "slug": "darkpink"
+
+                },
+                {
+                    "color": "#80ED99",
+                    "name": "green",
+                    "slug": "green"
+
+                },
+                {
+                    "color": "#57CC99",
+                    "name": "medgreen",
+                    "slug": "medgreen"
+
+                },
+                {
+                    "color": "#8FD9A8",
+                    "name": "Lightgreen",
+                    "slug": "lightgreen"
+
+                },
+                {
+                    "color": "#28B5B5",
+                    "name": "Teal",
+                    "slug": "teal"
+
+                },
+                {
+                    "color": "#4B778D",
+                    "name": "grey",
+                    "slug": "grey"
 
                 },
                 {
