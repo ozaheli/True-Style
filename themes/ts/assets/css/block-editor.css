@@ -1,0 +1,12 @@
+.wp-block-quote{
+    color:blue;
+}
+
+.alignwide{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wp-block-quote.is-style-fancy-quote {
+    color: tomato;
+}

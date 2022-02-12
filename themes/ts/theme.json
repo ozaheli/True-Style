@@ -1,0 +1,33 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "settings": {
+        "color": {
+            "defaultPalette": false,
+            "custom": false,
+            "palette": [
+                {
+                    "color": "#ff5252",
+                    "name": "gfr",
+                    "slug": "grapefruit"
+
+                },
+                {
+                    "name": "Black",
+                    "slug": "black",
+                    "color": "#000000"
+                },
+                {
+                    "name": "White",
+                    "slug": "white",
+                    "color": "#ffffff"
+                }
+            ]
+        },
+        "layout": {
+            "contentSize": "1000px",
+            "wideSize": "1200px"
+        }
+
+    }
+}
