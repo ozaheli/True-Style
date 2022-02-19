@@ -1,0 +1,12 @@
+#masthead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu ul{
+    display: flex;
+    gap: 1rem;
+}
+.menu li{
+    list-style: none;
+}
