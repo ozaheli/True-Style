@@ -14,3 +14,5 @@ function ts_use_block_editor_for_post_type($use_block_editor,$post_type ){
 
 }
 add_filter( 'use_block_editor_for_post_type','ts_use_block_editor_for_post_type',10 ,2);
+
+add_filter('woocommerce_enqueue_style', '__return_false');
