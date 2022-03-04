@@ -94,3 +94,23 @@
 {
     margin-left: 30px;
 }
+.woocommerce-billing-fields__field-wrapper{
+    margin-left: 30px;
+}
+.woocommerce-billing-fields h3{
+    margin-left: 30px;
+}
+.col-2{
+    margin-right: 30px;
+}
+#order_review_heading{
+    margin-left: 30px;
+}
+.woocommerce-checkout-review-order{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.product-name, .product-total{
+    background-color: white;
+
+}
