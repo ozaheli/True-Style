@@ -114,3 +114,13 @@
     background-color: white;
 
 }
+.entry-content{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.product-remove, .product-thumbnail, .product-price, .product-quantity, .product-subtotal{
+    background-color: white;
+}
+.coupon_code{
+    width: 350px;
+}
