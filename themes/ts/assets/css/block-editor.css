@@ -8,7 +8,7 @@
     width: 100%;
 }
 .page_item a{
-    color: white;
+    color: rgb(212, 246, 153);
 }
 .menu-toggle{
     opacity: 0;
@@ -19,7 +19,7 @@
 .site-footer{
     background-color: #A03C78;
     color: white;
-    height: 40px;
+    height: 25px;
     text-align: center;
     margin-top: 20px;
 }
@@ -127,15 +127,23 @@
 .woocommerce-MyAccount-navigation ul{
     list-style: none;
     background-color: #A03C78;
-    color: white;
+    color: rgb(194, 242, 187);
 }
-.entry-title{
+.woocommerce-product-gallery__image{
     margin-top: 100px;
-    text-align: right;
-    margin-right: 180px;
 }
 .wp-post-image{
     margin-top: -80px;
     width: 350px;
     height: 300px;
+}
+.site-header{
+    width: 2100px
+}
+.custom-logo-link img{
+    width: 340px;
+    height: 82px;
+}
+.product h2{
+    margin-top: 100px;
 }
