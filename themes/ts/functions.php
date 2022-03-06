@@ -50,6 +50,10 @@ function ts_setup() {
 	register_nav_menus(
 		array(
 			'menu-primary' => esc_html__( 'Primary', 'ts' ),
+			'menu-secondary' => esc_html__( 'Secondary', 'ts' ),
+			'menu-footer' => esc_html__('Footer','ts'),
+			
+
 		)
 	);
 
