@@ -21,7 +21,12 @@
     color: white;
     text-align: center;
 }
-
+#footer-menu li{
+    color: white;
+}
+#menu-item-242{
+    color: white;
+}
 .entry-title{
     text-align: center;
 }
@@ -81,6 +86,11 @@
 }
 .wp-image-211{
     margin-top: 50px;
+}
+.wc-block-grid__product-image img{
+    width: 400px;
+    height: 460px;
+
 }
 .wp-image-219{
     width: 400px;
