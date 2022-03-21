@@ -13,9 +13,20 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info grid-container">
-				<?php
-				
-					wp_nav_menu(
+			<?php 
+				$recipe_args = array(
+
+				);
+				$recipe_query = new WP_Query($args);
+				if($recipe_query->have_posts()){
+					while($recipe_query->have_posts()){
+						$recipe_query->have_posts();
+					}
+					wp_reset_postdata();
+				}
+			?>
+			<?php
+				wp_nav_menu(
 					array(
 					'theme_location' => 'menu-footer',
 					'menu_id'        => 'footer-menu',
