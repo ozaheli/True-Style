@@ -20,10 +20,11 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-<div id="page" class="site">
+<body> 
 	
+
+<div id="page" class="site">
+
 
 	<header id="masthead" class="site-header grid-container">
 		<div class="logo">
@@ -41,4 +42,5 @@
 	
 ?>
 </div>
-	</header><!-- #masthead -->
+	</header><!-- #masthead-->
+</div>

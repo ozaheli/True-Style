@@ -13,22 +13,22 @@
 
 <footer id="colophon" class="site-footer">
 	<div class="site-info">
-			<?php
-				wp_nav_menu(
-					array(
+		<?php
+			wp_nav_menu(
+				array(
 					'theme_location' => 'menu-footer',
 					'menu_id'        => 'footer-menu',
 					)
 				);
-				?>
-				
-				<?php
-				$freshfashion_args = array(
-					'post_type'        => array('freshfashion'),
-					'post_status'      => 'publish', 
-					'posts_per_page'   => 3 
-
-				);
+		?>
+	</div><!-- .site-info -->
+	<div class="post-cont">
+		<?php
+			$freshfashion_args = array(
+				'post_type'        => array('freshfashion'),
+				'post_status'      => 'publish', 
+				'posts_per_page'   => 3 
+			);
 				$freshfashion_query = new WP_Query($freshfashion_args);
 				?>
 				<div class="grid-container">
@@ -43,7 +43,7 @@
 						<div class="cell small-12 medium 4">
 							<?php 
 							the_post_thumbnail();
-							the_title();
+							the_title('<h3></h3>');
 							the_excerpt();
 							/*the_post_link();*/
 							?>
@@ -55,15 +55,16 @@
 				?>
 				</div>
 				</div>
+				</div>
 				<?php
 			/* translators: 1: Theme name, 2: Theme author. */
 				printf( esc_html__( '© Copyright %1$s by %2$s.', 'ts' ),'2022' ,'True Style', '<a href="https://helioza.xyz/">Heli Oza</a>' );
 				?>
 				
 				
-			</div><!-- .site-info -->
+			
 	</footer><!-- #colophon -->
-</div><!-- #page -->
+
 
 <?php wp_footer(); ?>
 

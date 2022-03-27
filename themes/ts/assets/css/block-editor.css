@@ -3,10 +3,11 @@
     height: 150px;
     
 }
-#masthead{
+
+/*#masthead{
     background-color: #A03C78;
-    width: 100%;
-}
+    width: 2500px;
+}*/
 .page_item a{
     color: rgb(212, 246, 153);
 }
@@ -14,18 +15,20 @@
     opacity: 0;
 }
 .menu-new-menu-container a{
-    color: white;
+    color: rgb(255, 255, 255);
 }
-.site-footer{
+footer{
     background-color: #A03C78;
-    color: white;
-    text-align: center;
+    height: 450px;
 }
-#footer-menu li{
-    color: white;
+.site-info{
+    margin-top: -420px;
 }
-#menu-item-242{
-    color: white;
+.site{
+    background-color: #A03C78;
+}
+.post-cont{
+    margin-top: 100px;
 }
 .entry-title{
     text-align: center;
@@ -81,8 +84,15 @@
 .wp-image-182{
     height: 500px;
 }
-.site-footer{
-    height: 200px;
+.wp-image-183{
+    width: 2500px;
+    max-height: 500px;
+}
+.add_to_cart_button{
+    background-color:#A03C78 ;
+}
+.amount{
+    text-decoration: none;
 }
 .wp-image-211{
     margin-top: 50px;
