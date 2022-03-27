@@ -13,17 +13,21 @@
 
 <footer id="colophon" class="site-footer">
 	<div class="site-info">
+		<!--Verifying the custom footer menu -->
 		<?php
+		if(has_nav_menu('menu-footer')){
 			wp_nav_menu(
 				array(
-					'theme_location' => 'menu-footer',
-					'menu_id'        => 'footer-menu',
-					)
+					'theme_location' => 'menu-footer'        
+				)
 				);
+		}
 		?>
 	</div><!-- .site-info -->
 	<div class="post-cont">
+
 		<?php
+		/*custom wp_query function for the footer */
 			$freshfashion_args = array(
 				'post_type'        => array('freshfashion'),
 				'post_status'      => 'publish', 
@@ -41,16 +45,16 @@
 						$freshfashion_query -> the_post();
 						?>
 						<div class="cell small-12 medium 4">
-							<?php 
+							<?php
 							the_post_thumbnail();
-							/*the_title('<h3>', '</h3>');*/
+							
+							/*checking if the title is exists with conditional statement */
 							if ( get_the_title() ){
 								?>
 								<h3><?php echo get_the_title();?></h3>
 								<?php
 							}
 							the_excerpt();
-							/*the_post_link();*/
 							?>
 						</div>
 						<?php
