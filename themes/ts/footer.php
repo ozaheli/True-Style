@@ -24,7 +24,7 @@
 				
 				<?php
 				$freshfashion_args = array(
-					'post_type'        => array('ts_fashion'),
+					'post_type'        => array('freshfashion'),
 					'post_status'      => 'publish', 
 					'posts_per_page'   => 3 
 
@@ -45,7 +45,7 @@
 							the_post_thumbnail();
 							the_title();
 							the_excerpt();
-							the_post_link();
+							/*the_post_link();*/
 							?>
 						</div>
 						<?php
