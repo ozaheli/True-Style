@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name : Sidebar Left
+ * Template Name: Sidebar Left
  *
  * 
  * Please note that this is the WordPress construct of pages
