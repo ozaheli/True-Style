@@ -27,10 +27,12 @@
 
 
 	<header id="masthead" class="site-header grid-container">
+		<!--The logo in the header-->
 		<div class="logo">
 			<?php the_custom_logo()
 			?>
 </div>
+<!-- Verifying the custom header menu in the header besides the logo-->
 <div class="menu">
 <?php
     if(has_nav_menu('menu-primary')){
@@ -40,12 +42,7 @@
 			)
 			);
 	}
-    	/*array(
-        'theme_location' => 'menu-primary',
-        'menu_id'        => 'primary-menu',
-        )
-    );*/
-	
+
 ?>
 </div>
 	</header><!-- #masthead-->
