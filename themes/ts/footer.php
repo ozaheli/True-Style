@@ -27,14 +27,14 @@
 			$freshfashion_args = array(
 				'post_type'        => array('freshfashion'),
 				'post_status'      => 'publish', 
-				'posts_per_page'   => 3 
+				'posts_per_page'   => 3,
+				'orderby'		   => 'rand',
+				'post__not_in'	   => array(get_the_ID())
 			);
 				$freshfashion_query = new WP_Query($freshfashion_args);
 				?>
 				<div class="grid-container">
 					<div class="grid-x grid-margin-y grid-margin-x">
-
-					
 				<?php
 				if ( $freshfashion_query -> have_posts() ){
 					while( $freshfashion_query -> have_posts() ){
@@ -43,7 +43,12 @@
 						<div class="cell small-12 medium 4">
 							<?php 
 							the_post_thumbnail();
-							the_title('<h3></h3>');
+							/*the_title('<h3>', '</h3>');*/
+							if ( get_the_title() ){
+								?>
+								<h3><?php echo get_the_title();?></h3>
+								<?php
+							}
 							the_excerpt();
 							/*the_post_link();*/
 							?>

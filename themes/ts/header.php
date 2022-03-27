@@ -33,12 +33,18 @@
 </div>
 <div class="menu">
 <?php
-    wp_nav_menu(
-    	array(
+    if(has_nav_menu('menu-primary')){
+		wp_nav_menu(
+			array(
+				'theme_location' => 'menu-primary',
+			)
+			);
+	}
+    	/*array(
         'theme_location' => 'menu-primary',
         'menu_id'        => 'primary-menu',
         )
-    );
+    );*/
 	
 ?>
 </div>

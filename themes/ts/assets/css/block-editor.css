@@ -20,6 +20,7 @@
 footer{
     background-color: #A03C78;
     height: 450px;
+    color: white;
 }
 .site-info{
     margin-top: -420px;
@@ -109,8 +110,7 @@ footer{
 .wp-image-217{
     margin-left: 30px;
 }
-.post-196
-{
+.post-196{
     margin-left: 30px;
 }
 .woocommerce-billing-fields__field-wrapper{
