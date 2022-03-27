@@ -43,11 +43,12 @@ function wpdocs_kantbtrue_init() {
         'show_ui'            => true,
         'show_in_menu'       => true,
         'query_var'          => true,
-        'rewrite'            => array( 'slug' => 'recipe' ),
+        'rewrite'            => array( 'slug' => 'freshfashion' ),
         'capability_type'    => 'post',
         'has_archive'        => true,
         'hierarchical'       => false,
         'menu_position'      => 20,
+        'menu_icon'          => 'dashicons-flag',
         'supports'           => array( 'title', 'editor', 'author', 'thumbnail' ),
         'taxonomies'         => array( 'category', 'post_tag' ),
         'show_in_rest'       => true
