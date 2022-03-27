@@ -11,41 +11,8 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer site-info">
-			<?php 
-				$recipe_args = array(
-					'post_type'      => array('ts_recipe'),
-					'post_status'    => 'publish',
-					'posts_per_page' => 3,
-				);
-				$recipe_query = new WP_Query($args);
-				?>
-
-				<div class="grid-container">
-					<div class="grid-x grid-margin-x grid-margin-y">
-
-				
-				<?php
-				
-				if($recipe_query->have_posts()){
-					while($recipe_query->have_posts()){
-						$recipe_query->the_posts();
-				?>
-					<div class="cell small-12 medium-4">
-						<?php 
-						the_post_thumbnail();
-						the_title(); 
-						the_excerpt(); 
-						?>
-					</div>
-					<?php
-					}
-					wp_reset_postdata();
-				}
-					?>
-			
-				</div>
-				</div>
+<footer id="colophon" class="site-footer">
+	<div class="site-info">
 			<?php
 				wp_nav_menu(
 					array(
@@ -53,11 +20,48 @@
 					'menu_id'        => 'footer-menu',
 					)
 				);
-			
-				/* translators: 1: Theme name, 2: Theme author. */
+				?>
+				
+				<?php
+				$freshfashion_args = array(
+					'post_type'        => array('ts_fashion'),
+					'post_status'      => 'publish', 
+					'posts_per_page'   => 3 
+
+				);
+				$freshfashion_query = new WP_Query($freshfashion_args);
+				?>
+				<div class="grid-container">
+					<div class="grid-x grid-margin-y grid-margin-x">
+
+					
+				<?php
+				if ( $freshfashion_query -> have_posts() ){
+					while( $freshfashion_query -> have_posts() ){
+						$freshfashion_query -> the_post();
+						?>
+						<div class="cell small-12 medium 4">
+							<?php 
+							the_post_thumbnail();
+							the_title();
+							the_excerpt();
+							the_post_link();
+							?>
+						</div>
+						<?php
+					}
+					wp_reset_postdata();
+				}
+				?>
+				</div>
+				</div>
+				<?php
+			/* translators: 1: Theme name, 2: Theme author. */
 				printf( esc_html__( '© Copyright %1$s by %2$s.', 'ts' ),'2022' ,'True Style', '<a href="https://helioza.xyz/">Heli Oza</a>' );
 				?>
-		</div><!-- .site-info -->
+				
+				
+			</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
