@@ -185,4 +185,4 @@ require get_template_directory() . '/inc/woocommerce.php';
 /*
  * custom posts additions.
 */
-require get_template_directory() . '/inc/post-type.php';
+require get_template_directory() . '/inc/post-types.php';
