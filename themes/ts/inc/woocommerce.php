@@ -19,6 +19,7 @@ add_filter( 'use_block_editor_for_post_type','ts_use_block_editor_for_post_type'
 add_filter('woocommerce_enqueue_style', '__return_false');
 
 add_action('woocommerce_single_product_summary', 'woocommerce_template_single_title', 4);
+
 function ts_woocommerce_single_product_summary(){
     echo '<p style="color:#A03C78"><b>We have the best products!</b></p>';
 }

@@ -17,17 +17,18 @@
 .menu-new-menu-container a{
     color: rgb(255, 255, 255);
 }
-footer{
+.site-footer{
     background-color: #A03C78;
+    color: rgb(255, 255, 255);
     height: 450px;
-    color: white;
 }
-.site-info{
+/*.site-info{
     margin-top: -420px;
-}
+}*/
 .site{
     background-color: #A03C78;
 }
+
 .post-cont{
     margin-top: 100px;
 }
@@ -145,7 +146,7 @@ footer{
 }
 .woocommerce-MyAccount-navigation ul{
     list-style: none;
-    background-color: #A03C78;
+    
     color: rgb(194, 242, 187);
 }
 .woocommerce-product-gallery__image{
