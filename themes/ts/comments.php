@@ -75,3 +75,6 @@ if ( post_password_required() ) {
 	?>
 
 </div><!-- #comments -->
+<?php
+get_sidebar();
+get_footer();
