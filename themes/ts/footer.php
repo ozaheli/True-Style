@@ -44,7 +44,7 @@
 					while( $freshfashion_query -> have_posts() ){
 						$freshfashion_query -> the_post();
 						?>
-						<div class="cell small-12 medium 4">
+						<div class="cell small-12 medium-4">
 							<?php
 							the_post_thumbnail();
 							
@@ -62,6 +62,7 @@
 					wp_reset_postdata();
 				}
 				?>
+						
 				</div>
 				</div>
 				</div>
